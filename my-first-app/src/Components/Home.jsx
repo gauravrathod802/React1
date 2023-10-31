@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import './Styles/Home.css';
 
 
-const Home = () =>{
+function Home(){
 return(
     <div>Home</div>
 );

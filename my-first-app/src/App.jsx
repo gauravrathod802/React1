@@ -1,29 +1,23 @@
 // import logo from './logo.svg';
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
+import {Routes,Route} from 'react-router-dom';
+
 import Home from './Components/Home.jsx'
-import Login from './Components/Login.jsx'
+import Login from './Components/Login'
+import Register from './Components/Register'
 
 function App() {
-    const[count,setCounter]=useState(0);
-
-    function increment(){
-        setCounter((preValue)=>preValue+1);
-    }
-
-    function decrement(){
-        setCounter((preValue)=>preValue-1);
-    }
-
-
     return(
-        <div>
-        <h1>Cart</h1>
-        <button onClick={increment}>+</button>
-        <span>{count}</span>
-        <button onClick={decrement}>-</button>
+        <div className='App'>
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/login' element={<Login/>}/>
+                <Route path='/register' element={<Register/>}/>
+            </Routes>
+
         </div>
-    )
+    );
 }
 
 export default App;
