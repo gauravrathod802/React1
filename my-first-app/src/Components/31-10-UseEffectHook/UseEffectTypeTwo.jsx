@@ -12,6 +12,7 @@ function UseEffectTwo(){
     },[])
     return(
         <div>
+            <h2>Use Effect type two</h2>
             <h1>Counter:{count}</h1>
             <button onClick={increment}>+</button>
         </div>

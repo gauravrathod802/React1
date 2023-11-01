@@ -20,6 +20,7 @@ function UseEffectThree(){
 
 return(
     <div>
+        <h1>Use Effect type 3</h1>
         <h1>Counter:{counter}</h1>
         <button onClick={increment}>+</button>
         <h2>Counter2:{counter2}</h2>
