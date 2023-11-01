@@ -5,7 +5,8 @@ import Home from './Components/Home.jsx';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import UseState from './Components/27-10-Hooks/UseState';
-
+import UseEffect from './Components/31-10-UseEffectHook/UseEffect';
+import UseEffectTypeTwo from './Components/31-10-UseEffectHook/UseEffectTypeTwo';
 function App() {
     return(
 
@@ -15,6 +16,8 @@ function App() {
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/register' element={<Register/>}/>
                 <Route path='/use-state' element={<UseState />}/>
+                <Route path='/use-effect' element={<UseEffect/>}/>
+                <Route path='/use-effect2' element={<UseEffectTypeTwo />}/>
             </Routes>
 
         </div>
