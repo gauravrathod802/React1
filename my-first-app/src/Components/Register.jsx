@@ -1,5 +1,5 @@
-
 import{useNavigate} from 'react-router-dom'
+
 function Register(){
     const router=useNavigate();
 
@@ -9,7 +9,8 @@ function Register(){
     return(
         <div>
         <h1>Register</h1>
-        <button onClick={gotoLogin}>Login?</button>
+        <p>If you already have an account click login</p>
+        <button onClick={gotoLogin}>Login</button>
         </div>
     )
 }
