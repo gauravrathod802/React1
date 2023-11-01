@@ -7,6 +7,8 @@ import Register from './Components/Register';
 import UseState from './Components/27-10-Hooks/UseState';
 import UseEffect from './Components/31-10-UseEffectHook/UseEffect';
 import UseEffectTypeTwo from './Components/31-10-UseEffectHook/UseEffectTypeTwo';
+import UseEffectTypeThree from './Components/31-10-UseEffectHook/UseEffectTypeThree';
+
 function App() {
     return(
 
@@ -18,6 +20,7 @@ function App() {
                 <Route path='/use-state' element={<UseState />}/>
                 <Route path='/use-effect' element={<UseEffect/>}/>
                 <Route path='/use-effect2' element={<UseEffectTypeTwo />}/>
+                <Route path='/use-effect3' element={<UseEffectTypeThree/>}/>
             </Routes>
 
         </div>
