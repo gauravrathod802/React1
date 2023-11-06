@@ -10,8 +10,19 @@ import UseEffectTypeTwo from './Components/31-10-UseEffectHook/UseEffectTypeTwo'
 import UseEffectTypeThree from './Components/31-10-UseEffectHook/UseEffectTypeThree';
 import UseEffectFour from './Components/1-11-UseEffectType4/UseEffectFour';
 import PropDrilling from './Components/2-11-Prop-Drilling/PropDrilling.jsx';
+import { useState } from 'react';
+import PropDrillingTwo from './Components/2-11-Prop-Drilling/PropDrillingTwo.jsx';
 
 function App() {
+    const[student, setData]=useState(["vikas","vinod","vishnu"])
+
+    // prop-drillingTwo fun passing
+    const [counter, setCounter] = useState(10);
+    function IncrementCounter() {
+        setCounter((prevValue) => prevValue + 1)
+    }
+
+
     return(
 
         <div className='App'>
@@ -24,7 +35,8 @@ function App() {
                 <Route path='/use-effect2' element={<UseEffectTypeTwo />}/>
                 <Route path='/use-effect3' element={<UseEffectTypeThree/>}/>
                 <Route path='/use-effect4' element={<UseEffectFour/>}/>
-                <Route path='/prop-drilling' element={<PropDrilling/>}/>
+                <Route path='/prop-drilling' element={<PropDrilling data={student} myName="Gaurav"/>}/>
+                <Route path='/prop-drilling2' element={<PropDrillingTwo counter={counter} IncrementCounter={IncrementCounter}/>}/>
             </Routes>
 
         </div>
