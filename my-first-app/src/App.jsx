@@ -12,6 +12,9 @@ import UseEffectFour from './Components/1-11-UseEffectType4/UseEffectFour';
 import PropDrilling from './Components/2-11-Prop-Drilling/PropDrilling.jsx';
 import { useState } from 'react';
 import PropDrillingTwo from './Components/2-11-Prop-Drilling/PropDrillingTwo.jsx';
+import Mapping from './Components/2-11-Prop-Drilling/Mapping.jsx';
+import MappingTwo from './Components/2-11-Prop-Drilling/MappingTwo.jsx';
+
 
 function App() {
     const[student, setData]=useState(["vikas","vinod","vishnu"])
@@ -37,6 +40,9 @@ function App() {
                 <Route path='/use-effect4' element={<UseEffectFour/>}/>
                 <Route path='/prop-drilling' element={<PropDrilling data={student} myName="Gaurav"/>}/>
                 <Route path='/prop-drilling2' element={<PropDrillingTwo counter={counter} IncrementCounter={IncrementCounter}/>}/>
+                <Route path='/mapping' element={<Mapping/>}/>
+                <Route path='/mapping2' element={<MappingTwo/>}/>
+
             </Routes>
 
         </div>
