@@ -1,0 +1,27 @@
+.Sign-up{
+   display: flex;
+   justify-content: center;
+   min-height: 100vh;
+   align-items: center;
+}
+#myForm{
+    /* background-color: aqua; */
+    border: 1px solid black;
+    width: 35%;
+    padding-left: 90px;
+    /* padding: 20px; */
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+.input{
+    margin-bottom: 15px;
+}
+.submit{
+    font-size: 15px;
+    margin-top: 20px;
+    height: 30px;
+    width: 170px;
+    background-color: rgb(32, 216, 7);
+    color: white;
+    border-radius: 5px;
+}

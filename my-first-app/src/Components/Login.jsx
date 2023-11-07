@@ -5,6 +5,8 @@ function Login(){
 
     function gotoRegister(){
         redirect('/Register');
+        redirect('/form');
+
     }
 return(
 <div>
