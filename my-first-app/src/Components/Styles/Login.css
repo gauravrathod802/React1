@@ -12,7 +12,7 @@
     border-radius: 10px;
     background-color: rgb(243, 239, 239);
     border: none;
-    box-shadow:0 5px 7px 0 rgb(63, 205, 110);
+    box-shadow:0 7px 10px 0 rgb(63, 205, 110);
 }
 .inputText{
     width: 190px;
