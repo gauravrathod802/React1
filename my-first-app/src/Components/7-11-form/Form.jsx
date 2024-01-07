@@ -2,12 +2,11 @@ import './Form.css';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 function Form() {
     const [userData, setUserData] = useState({ name: "", email: "", password: "" })
     const router = useNavigate();
     console.log(userData, "userData state")
-
+    
     function handleChange(event) {
         setUserData({ ...userData, [event.target.name]: event.target.value })
     }
@@ -16,13 +15,11 @@ function Form() {
         if (userData.name && userData.email && userData.password) {
             try {
                 const response = { data: { success: true, message: "Registration Completed." } }
-
                 if (response.data.success) {
                     alert(response.data.message)
                     setUserData({ name: "", email: "", password: "" })
                     router('/login')
                 }
-
             }
             catch (error) {
                 alert(error.response.data.message)
