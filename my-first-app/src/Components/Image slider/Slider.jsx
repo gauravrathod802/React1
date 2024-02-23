@@ -145,11 +145,11 @@ const SimpleSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
   };
 
   return (
