@@ -17,6 +17,7 @@ import MappingTwo from './Components/2-11-Prop-Drilling/MappingTwo';
 import Register from './Components/6-11-Form/Register';
 import Form from './Components/7-11-form/Form';
 import Slider from './Components/Image slider/Slider.jsx';
+import Ring from './Components/Ring Slider/Ring.jsx';
 
 function App() {
     const[student, setData]=useState(["vikas","vinod","vishnu"])
@@ -48,6 +49,7 @@ function App() {
                 <Route path='/register' element={<Register/>}/>
                 <Route path='/form' element={<Form/>}/>
                 <Route path='/slider' element={<Slider/>}/>
+                <Route path='/ring' element={<Ring/>}/>
 
             </Routes>
 
