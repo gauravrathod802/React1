@@ -9,12 +9,8 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { routes } from "../../constant";
 import Menu from "./Menu";
 
-import { FaAngleDown, FaAngleRight } from "react-icons/fa";
-
-import ExpandMenu from "./ExpandMenu"; // Import the ExpandMenu component
 
 const Header = ({ toggleDrawer, routes }) => {
     console.log(routes);
@@ -45,7 +41,7 @@ const Header = ({ toggleDrawer, routes }) => {
                         <i>
                             <FaBars onClick={toggleDrawer} />
                         </i>
-                        <a href="" onClick={handleHomeClick}>
+                        <a href="#" onClick={handleHomeClick}>
                             <img className="logo_img" src={Logo} alt="" />
                         </a>
                     </div>
